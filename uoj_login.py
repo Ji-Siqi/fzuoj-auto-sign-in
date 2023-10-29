@@ -18,7 +18,7 @@ jntm=search(r"_token : \"([A-Za-z0-9]+)\"",text,M)
 if jntm==None:
     print("Error!")
     exit()
-token=jntm.group(1)
+token=72e5fc09b790b841b2c52c50895cf011
 r3=post("https://www.fzoi.top/login",cookies=cookie1,headers=headers,data={"username":username,"password":password,"ip":"","_token":token,"response":"","login":"","password2":password2})
 cookie2=dict_from_cookiejar(r3.cookies)
 if cookie2=={}:
