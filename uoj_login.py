@@ -6,10 +6,12 @@ from os import getenv
 from hashlib import md5
 headers={"User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36 SE 2.X MetaSr 1.0"}
 username = "xf20260003"
-password=hash.new("FEqAm2pnA6Ed622VqmqLuSKdJ2WJplCT".encode(),"123456789".encode(),"MD5").hexdigest()
+# password=hash.new("FEqAm2pnA6Ed622VqmqLuSKdJ2WJplCT".encode(),"123456789".encode(),"MD5").hexdigest()
+password=72e5fc09b790b841b2c52c50895cf011
 cxk=md5()
 cxk.update("********".encode())
-password2=cxk.hexdigest()
+# password2=cxk.hexdigest()
+password2=6fe32cb2268c4fc8a548c824ed086ade
 r1=get("https://www.fzoi.top",headers=headers)
 cookie1=dict_from_cookiejar(r1.cookies)
 r2=get("https://www.fzoi.top/login",headers=headers,cookies=cookie1)
